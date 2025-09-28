@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+@font-face {
+  font-family: "Anton";
+  src:
+    url("/fonts/anton/anton-regular.woff2") format("woff2"),
+      url("/fonts/anton/anton-regular.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src:
+    url("/fonts/inter/inter-regular.woff2") format("woff2"),
+    url("/fonts/inter/inter-regular.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src:
+    url("/fonts/inter/inter-italic.woff2") format("woff2"),
+    url("/fonts/inter/inter-italic.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+.cursor-default { cursor: url("/cursors/default.cur"), default; }
+.cursor-pointer { cursor: url("/cursors/pointer.cur"), pointer; }
+.cursor-person { cursor: url("/cursors/person.cur"), auto; }
+.cursor-help { cursor: url("/cursors/help.cur"), help; }
+.cursor-unavailable { cursor: url("/cursors/unavailable.cur"), not-allowed; }
+.cursor-location { cursor: url("/cursors/location.cur"), crosshair; }
