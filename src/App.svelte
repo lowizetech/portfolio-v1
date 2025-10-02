@@ -41,8 +41,9 @@
 
   <Email />
   <Header />
-  <div class="absolute z-[2] inset-0 h-screen w-full cursor-default active:[.cursor-default] overflow-y-auto">
-    
+  <div class="absolute z-[2] inset-0 h-screen w-full cursor-default active:[.cursor-default] overflow-y-auto scrollable-content">
+    <Home />
+    <About />
   </div>
 
   <div class="fixed z-[1] h-screen w-full grid-lines"></div>
