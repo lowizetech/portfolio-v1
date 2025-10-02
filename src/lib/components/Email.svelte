@@ -3,7 +3,7 @@
 	title="email"
 	rel="noreferrer noopener"
 	target="_blank"
-	class="fixed z-[3] -rotate-90 -left-[70px] top-1/2 text-neutral-400 hover:text-white tracking-[1px] cursor-pointer duration-200 ease sm:block hidden"
+	class="fixed z-[3] -rotate-90 -left-[70px] top-1/2 text-neutral-400 hover:text-white tracking-[1px] cursor-pointer duration-[350ms] ease sm:block hidden"
 >
 	lowize.tech@gmail.com
 </a>
