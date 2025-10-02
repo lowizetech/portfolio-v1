@@ -8,6 +8,7 @@
   import Experiences from "@components/Experiences.svelte";
   import Projects from "@components/Projects.svelte";
 
+
   import { onMount } from "svelte";
 
   onMount(async () => {
@@ -36,10 +37,34 @@
   });
 </script>
 
+<div class="relative h-screen w-full overflow-hidden">
 
-<div class="h-screen w-screen cursor-default">
+  <Email />
+  <Header />
+  <div class="absolute z-[2] inset-0 h-screen w-full cursor-default active:[.cursor-default] overflow-y-auto">
+    
+  </div>
+
+  <div class="fixed z-[1] h-screen w-full grid-lines"></div>
+  <div class="fixed z-[1] h-screen w-full overlay-circular "></div>
+
 </div>
 
 <style>
+
+  .grid-lines {
+    background: 
+      linear-gradient(to right, rgba(255,255,255,0.125) 1px, transparent 1px) center / 3.5rem 3.5rem,
+      linear-gradient(to bottom, rgba(255,255,255,0.125) 1px, transparent 1px) center / 3.5rem 3.5rem,
+      black;
+  }
+
+  .overlay-circular {
+    background-image: radial-gradient(
+      circle at center,
+      rgba(0, 0, 0, 0) 1%,
+      rgba(0, 0, 0, 0.9) 100%
+    );
+  }
 
 </style>
