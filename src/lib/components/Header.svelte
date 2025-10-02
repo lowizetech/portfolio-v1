@@ -36,7 +36,7 @@
 		target="_blank"
 		rel="noreferrer noopener"
 		title="github account"
-		class="relativecursor-pointer active:scale-[0.9] duration-[350ms] ease will-change-transform group"
+		class="relative cursor-pointer active:scale-[0.9] duration-[350ms] ease will-change-transform group"
 	>
 		<span class="absolute inset-0 -z-10 opacity-0 blur-xl bg-blue-600 rounded-lg transition duration-[350ms] ease-in-out group-hover:opacity-100"></span>
 		<img src={Logo} alt="Lowizetech" width="40">
