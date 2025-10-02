@@ -6,6 +6,16 @@ html {
   font-family: "Inter", sans-serif;
 }
 
+.scrollable-content {
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollable-content::-webkit-scrollbar {
+  display: none;
+}
+
 @font-face {
   font-family: "Anton";
   src:
