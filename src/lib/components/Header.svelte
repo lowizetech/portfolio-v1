@@ -1,4 +1,6 @@
 <script>
+	import { onMount } from "svelte";
+  import { gsap } from "gsap";
 	import Logo from "/images/lowizetech-logo.webp";
 	import {
 		TextAlignJustify,
@@ -9,6 +11,14 @@
 		Twitter,
 		Linkedin, X
 	} from "lucide-svelte";
+
+  onMount(() => {
+    gsap.fromTo(
+      ".slide-top",
+      { y: 0, opacity: 0 }, // start above and invisible
+      { y: 90, opacity: 1, duration: 0., ease: "power2.out", stagger: 0.1 }
+    );
+  });
 
 	let navOpen = false;
 
@@ -36,7 +46,7 @@
 		target="_blank"
 		rel="noreferrer noopener"
 		title="github account"
-		class="relative cursor-pointer active:scale-[0.9] duration-[350ms] ease will-change-transform group"
+		class="relative cursor-pointer active:scale-[0.9] duration-[350ms] ease will-change-transform group slide-top top-[-90px]"
 	>
 		<span class="absolute inset-0 -z-10 opacity-0 blur-xl bg-blue-600 rounded-lg transition duration-[350ms] ease-in-out group-hover:opacity-100"></span>
 		<img src={Logo} alt="Lowizetech" width="40">
@@ -45,7 +55,7 @@
 	<button
 	  aria-label="open navigator"
 	  on:click={() => (navOpen = !navOpen)}
-	  class="relative cursor-pointer active:scale-[0.85] duration-[350ms] ease will-change-transform group"
+	  class="relative cursor-pointer active:scale-[0.85] duration-[350ms] ease will-change-transform group slide-top top-[-90px]"
 	>
 		<!-- Glow background -->
 		<span class="absolute inset-0 -z-10 opacity-0 blur-xl bg-blue-600 rounded-lg transition duration-[350ms] ease-in-out group-hover:opacity-100"></span>
