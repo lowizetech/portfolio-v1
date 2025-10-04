@@ -41,7 +41,7 @@
 
   <Email />
   <Header />
-  <div class="absolute z-[2] inset-0 h-screen w-full cursor-default active:[.cursor-default] overflow-y-auto scrollable-content">
+  <div class="absolute z-[2] inset-0 h-screen w-full cursor-default active:[.cursor-default] scrollable-content scroll-smooth">
     <Home />
     <About />
   </div>
