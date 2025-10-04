@@ -15,8 +15,8 @@
   onMount(() => {
     gsap.fromTo(
       ".slide-top",
-      { y: 0, opacity: 0 }, // start above and invisible
-      { y: 90, opacity: 1, duration: 0., ease: "power2.out", stagger: 0.1 }
+      { y: 0, opacity: 0 },
+      { y: 90, opacity: 1, duration: 0.2, ease: "front.out", stagger: 0.1 }
     );
   });
 
